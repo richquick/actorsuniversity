@@ -1,0 +1,4 @@
+<div>
+  <%= f.label :tag_list, t("Tags") %>
+  <%= f.text_field :tag_list, class: "taggable no ajax", value: @lesson.tags.map(&:name).join(", ") %>
+</div>

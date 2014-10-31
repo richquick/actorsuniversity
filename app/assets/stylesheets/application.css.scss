@@ -1,0 +1,51 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require jquery.fileupload-ui
+ *= require jquery-ui
+ *= require chosen
+ *= require jquery.tagit
+ *= require tagit.ui-zendesk
+ *= require fancybox 
+ *= require highslide
+ *= require _framework/svelte/main
+ *= require _framework/health/main
+ */
+
+$ch_tablet_min: 700px;
+$ch_desktop_min: 900px;
+
+@import "_framework/chassis/mixins/*";
+@import "_framework/chassis/_variables.css.scss";
+@import "_framework/skin/_variables.css.scss";
+
+
+@import "_framework/chassis/components/mobile/*";
+@import "_framework/chassis/layout/mobile/*";
+@import "_framework/skin/components/mobile/*";
+@import "_framework/skin/layout/mobile/*";
+
+@media only screen 
+and (min-width : $ch_tablet_min) {
+  @import "_framework/chassis/components/tablet/*";
+  @import "_framework/chassis/layout/tablet/*";
+
+  @import "_framework/skin/components/tablet/*";
+  @import "_framework/skin/layout/tablet/*";
+}
+
+@media only screen 
+and (min-width : $ch_desktop_min) {
+  @import "_framework/chassis/components/desktop/*";
+  @import "_framework/chassis/layout/desktop/*";
+
+  @import "_framework/skin/components/desktop/*";
+  @import "_framework/skin/layout/desktop/*";
+}

@@ -1,0 +1,57 @@
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@user.errors.count, "problem") %> <%= t("stopped_this_being_saved") %></h2>
+
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="second content">
+  <div class="section">
+    <%= render partial: 'users/avatar_preview', locals: {size: :full, user: @user} %>
+    <%= f.file_field :avatar_image %>
+    <%= f.hidden_field :avatar_image_cache %>
+  </div>
+
+  <%= render partial: '/users/save_user', locals: {f: f} %>
+</div>
+
+<div class="main content">
+  <%= render partial: 'users/password_field', locals: {f: f } %>
+
+  <%- if admin? %>
+    <%= render partial: 'users/roles', locals: {f: f } %>
+  <% end %>
+
+
+  <div class="section">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+
+    <%= f.label :job_title %>
+    <%= f.text_field :job_title %>
+
+    <%= f.label :bio %>
+    <%= f.text_area :bio %>
+  </div>
+
+  <div class="section">
+    <%= render partial: 'users/user_phone_numbers', locals: {f: f } %>
+  </div>
+
+  <div class="section">
+    <%= render partial: 'users/user_links', locals: {f: f } %>
+  </div>
+
+  <div class="last save button for user">
+    <%= render partial: '/users/save_user', locals: {f: f} %>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<%= render 'shared/head' %>
+<body data-controller='<%= params[:controller]%>' data-action='<%= current_action%>' <%= body_class %>>
+
+<%= include_gon %>
+
+<div class="stripe">
+  <div class="wrapper">
+    <%= yield %>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+// List mixins
+@mixin clean_list($cf_li_padding) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    margin: 0;
+    padding: $cf_li_padding;
+    list-style: none;
+  }
+}
+
+@mixin inline_list($cf_li_padding) {
+  display: inline-block;
+  @include clean_list($cf_li_padding);
+  li {
+    display: inline-block;
+  }
+}

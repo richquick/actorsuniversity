@@ -1,0 +1,53 @@
+<%- if exam_sitting.question_responses.any? %>
+  <div class='past_answers'>
+    <div class='panel heading'> 
+      Progress
+      <div class='progress wrap'>
+        <div class='bar wrap' data-progress='50'>
+          <div class="bar">
+            <div class="indicator" style="width:<%= exam_sitting.progress.to_i %>%;"></div>
+          </div>
+        </div>
+        <div class="percentage wrap"><%= exam_sitting.progress.to_i %>% done
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion of answers for exam">
+      <% exam_sitting.question_responses.each do |r|%>
+      <div class='item'>
+        <div class='two_column grid'>
+          <div class='main content expander'><%= r.question_text %></div>
+          <div class='second content'>
+            <div class="actions">
+              <ul class="condensed list of items for exam results">
+                <li class="correct"><span class="points"><%= r.score_correct %></span> correct</li>
+                <li class="incorrect"><span class="points"><%= r.score_incorrect %></span> incorrect</li>
+                <li class="total">Total: <span class="actual points"><%= r.score_total %></span><span class="potential points"><%= r.score_max %></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='expandable exams'>
+          <table class='table of question_responses'>
+            <thead>
+              <th>Answer</th>
+              <th>Your answer</th>
+              <th>Correct answers</th>
+            </thead>
+            <tbody>
+              <% r.results.each do |g| %>
+                <tr class='<%= g.css_class %>'>
+                  <td> <%= g.answer_text %> </td>
+                  <td> <%= g.guess_mark %> </td>
+                  <td> <%= g.answer_mark %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,5 @@
+<%= button_to [:admin, :exam_finalizations] do %>
+  <%=hidden_field_tag "exam_finalization[exam_id]", @exam.id %>
+  Finalize exam
+<% end %>
+

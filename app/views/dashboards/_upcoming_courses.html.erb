@@ -1,0 +1,19 @@
+<% to_complete = @dashboard.upcoming_courses_to_complete %>
+<% if to_complete.any? %>
+  <div class='upcoming courses'>
+      <h2>Course Deadlines</h2>
+      <ul class="list of links">
+        <% to_complete.each do |a| %>
+          <li class='<%= a.css_class %> course item'>
+            <%= a.complete_by_date %>
+            (<%= a.distance_of_time %>)
+
+            <%= link_to a.course do %>
+              <%= a.course.title %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+  </div>
+<% end %>
+

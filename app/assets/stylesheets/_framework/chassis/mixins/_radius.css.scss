@@ -1,0 +1,54 @@
+// Radius Mixins
+@mixin rounded_corners($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin top_rounded_corners($radius){
+    -webkit-border-top-left-radius: $radius;
+    -webkit-border-top-right-radius: $radius;
+    -moz-border-radius-topleft: $radius;
+    -moz-border-radius-topright: $radius;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+}
+
+@mixin bottom_rounded_corners($radius){
+    -webkit-border-bottom-left-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-radius-bottomleft: $radius;
+    -moz-border-radius-bottomright: $radius;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+@mixin left_rounded_corners($radius){
+    -webkit-border-bottom-left-radius: $radius;
+    -webkit-border-top-left-radius: $radius;
+    -moz-border-radius-bottomleft: $radius;
+    -moz-border-radius-topleft: $radius;
+    border-bottom-left-radius: $radius;
+    border-top-left-radius: $radius;
+}
+
+@mixin right_rounded_corners($radius){
+    -webkit-border-top-right-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-radius-topright: $radius;
+    -moz-border-radius-bottomright: $radius;
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+@mixin circle($radius,$background_color,$font_size,$font_color,$text_shunt,$font_weight){
+  font-weight: $font_weight;
+  padding-top: $text_shunt;
+  height: $radius - $text_shunt;
+  width: $radius;
+  text-align: center;
+  @include rounded_corners($radius);
+  background-color: $background_color;
+  font-size: $font_size;
+  color: $font_color;
+}

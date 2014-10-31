@@ -1,0 +1,21 @@
+<li class='comment'>
+  <div class="two_column grid">
+    <div class="second content">
+
+
+    <div class='summary'>
+      <div class='user'>
+        <%= link_to comment.user do %>
+          <%= comment.user_name %>
+          <div class='thumbnail'><%= image_tag comment.user_thumbnail %></div>
+        <% end %>
+      </div>
+      <span class='created'><%= time_ago_in_words comment.created_at %> ago</span>
+    </div>
+  </div>
+
+  <div class="main content">
+    <span class='title'><h4><%= comment.title %></h4></span>
+    <div class='text'><%= comment.comment %></div>
+  </div>
+</li>

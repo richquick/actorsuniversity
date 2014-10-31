@@ -1,0 +1,132 @@
+.nav {
+  .twitter-typeahead{
+    input {
+      margin-top: -5px;
+    }
+    input.typeahead.tt-query {
+      background-color: #fff!important;
+    }
+    .tt-dropdown-menu {
+      position: absolute;
+      left: -350px;
+      width: 100%;
+      background-color: rgba(80,80,80,0.9);
+      padding: 0 0 15px 15px;
+      border: 1px solid #ccc;
+      border-top: none;
+      .tt-is-under-cursor {
+         a {
+          background-color: rgba(80,80,80,1);
+          color: #fff;
+        }
+      }
+      a:hover {
+        background-color: rgba(80,80,80,1);
+        color: #fff;
+      }
+      .tt-suggestion {
+        a {
+          padding: 5px;
+          color: #fff;
+          display: block;
+          cursor: pointer;
+          &.lesson {
+            padding-left: 30px;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 14px;
+            background-image: asset_url('_framework/chassis/icons/black/glyphicons_050_link.png');
+          }
+          &.doc,
+          &.docx {
+            background-image: asset_url('_framework/chassis/icons/black/glyphicons_036a_doc_file.png');
+            background-size: 17px;
+          }
+          &.pdf {
+            background-image: asset_url('_framework/chassis/icons/black/glyphicons_036b_pdf_file.png');
+            background-size: 17px;
+          }
+          &.xls,
+          &.xlsx {
+            background-image: asset_url('_framework/chassis/icons/black/glyphicons_036c_xls_file.png');
+            background-size: 17px;
+          }
+          &.ppt,
+          &.pptx {
+            background-image: asset_url('_framework/chassis/icons/black/glyphicons_036d_ppt_file.png');
+            background-size: 17px;
+          }
+          &.swf {
+            background-image: asset_url('_framework/chassis/icons/black/glyphicons_036e_swf_file.png');
+            background-size: 17px;
+          }
+          &.youtube {
+            background-image: asset_url('_framework/chassis/icons/black/glyphicons_social_22_youtube.png');
+          }
+        }
+        margin-bottom: -10px;
+      }
+    }
+  }
+}
+
+// TONY
+.tt-dataset-0,
+.tt-dataset-1,
+.tt-dataset-2,
+.tt-dataset-3,
+.tt-dataset-4,
+.tt-dataset-5,
+.tt-dataset-6,
+.tt-dataset-7,
+.tt-dataset-8,
+.tt-dataset-9,
+.tt-dataset-10,
+.tt-dataset-11,
+.tt-dataset-12,
+.tt-dataset-13,
+.tt-dataset-14,
+.tt-dataset-15,
+.tt-dataset-16,
+.tt-dataset-17,
+.tt-dataset-18,
+.tt-dataset-19
+ {
+  width: $ch_twitter_typeahead_dataset_width;
+  float: $ch_twitter_typeahead_dataset_float;
+  margin-left: $ch_twitter_typeahead_dataset_margin_left;
+  margin-right: $ch_twitter_typeahead_dataset_margin_right;
+  h3 {
+    font-weight: $ch_twitter_typeahead_dataset_h3_font_weight;
+    display: $ch_twitter_typeahead_dataset_h3_display;
+    background-color: $ch_twitter_typeahead_dataset_h3_background;
+    padding: $ch_twitter_typeahead_dataset_h3_padding;
+    margin-top: $ch_twitter_typeahead_dataset_h3_margin_top;
+    margin-bottom: $ch_twitter_typeahead_dataset_h3_margin_bottom;
+    color: $ch_twitter_typeahead_dataset_h3_color;
+    @include text_shadow (1px,2px,0,#999);
+  }
+}
+
+.tt-dataset-4,
+.tt-dataset-5,
+.tt-dataset-6,
+.tt-dataset-7,
+.tt-dataset-8,
+.tt-dataset-9,
+.tt-dataset-10,
+.tt-dataset-11,
+.tt-dataset-12,
+.tt-dataset-13,
+.tt-dataset-14,
+.tt-dataset-15,
+.tt-dataset-16,
+.tt-dataset-17,
+.tt-dataset-18,
+.tt-dataset-19 {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9000px;
+}

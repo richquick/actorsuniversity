@@ -1,0 +1,233 @@
+en:
+  errors:
+    user_roles:
+      already_used_role: "already used role %{role}"
+  save:           "Save"
+  edit:           "Edit"
+  delete:         "Delete"
+  back:           "Back"
+  save_course:    "Save Course"
+  edit_course:    "Edit Course"
+  save_lesson:    "Save Lesson"
+  Lessons:        "Lessons"
+  all_courses:    "All Courses"
+  Upload_a_file:  "Upload a file"
+  Paste_a_link:   "Paste a link"
+  Name:           "Name"
+  Email:          "Email"
+  Roles:          "Roles"
+  Actions:        "Actions"
+  New_user:       "New user"
+  User_details:   "User details"
+  Dashboard:      "Dashboard"
+  Courses:        "Courses"
+  Filter:         "Filter"
+  Users:          "Users"
+  Groups:         "Groups"
+  Interests:      "Interests"
+  Exams:          "Exams"
+
+  Settings:       "Settings"
+  View_profile:   "View profile"
+  Edit_profile:   "Edit profile"
+
+  Sign_out:       "Sign out"
+
+  Search_results: "Search results"
+  Search:         "Search"
+  New_Lesson:     "New Lesson"
+  No_results:     "No results"
+  My_interests:   "My interests"
+  New_user_interest: "New user interest"
+  About_me:       "About me"
+  Job_title:      "Job title"
+  show:           "Show"
+  Other_results:  "Other results"
+  Tag:            "Tag"
+  Tags:           "Tags"
+  Add_tags:       "Save Tags"
+  My_tags:        "My tags"
+  My_skills:      "My skills"
+  My_groups:      "My groups"
+  My_courses:     "My courses"
+  List_courses:   "Courses"
+  List_lessons:   "Lessons"
+  New_group:      "New group"
+  Progress:       "Progress"
+
+  Give_your_lesson_a_name_and_description_html: "Give your lesson a name &amp; description"
+  Tag_your_lesson_and_go_html:                  "Tag your lesson &amp; go"
+  stopped_this_being_saved:                     "stopped this being saved"
+
+  shared:
+    lessons_flash:
+      course_count: "You have %{courses} courses, with %{lessons} lessons to complete"
+  navigation:
+    settings:
+      view_as_user: "View as user"
+      view_as_admin: "View as admin"
+  users:
+    user:
+      current_courses: "Current courses"
+      current_groups:  "Current groups"
+      skills: "Skills"
+      interests: "Interests"
+    form:
+      role: "Role"
+    roles: 
+      role: "Role"
+
+  exam_sittings:
+    new:
+      questions: "%{number} questions"
+    show:
+      exam: "Exam"
+    score:
+      score: "%{score}/%{max} (%{percentage})"
+      max_score: "Max score"
+      percentage: "Percentage"
+
+  exams:
+    show:
+      belongs_to_these_courses: "This exam belongs to these courses:"
+      take_exam: "Take Exam"
+    exam_start_or_retake:
+      start_exam: "Start exam %{title}"
+      retake_exam: "Retake exam %{title}"
+    summary:
+      question_count:
+        one: '1 question'
+        other: '%{count} questions'
+
+
+  question_responses:
+    already_answered: "Already answered this question"
+    form:
+      next_question: "Next question"
+
+
+  dashboards:
+    show:
+      welcome:              "Welcome"
+  lessons:
+    show:
+      completed:         "Completed"
+    complete_lesson:
+      mark_as_completed: "Mark as completed"
+
+    summary:
+      completed: "Completed"
+      take_lesson: "Take Lesson"
+
+    lesson:
+      rate_this:            "Rate this: "
+      add_to_course:        "Add to course"
+      remove_from_course:   "Remove from course"
+
+    media_type_document:
+      take_lesson: "Take Lesson"
+    media_type_image:
+      take_lesson: "Take Lesson"
+    media_type_link:
+      take_lesson: "Take Lesson"
+    media_type_video:
+      take_lesson: "Take Lesson"
+    media_type_youtube:
+      take_lesson: "Take Lesson"
+
+
+  courses:
+    course:
+      assigned_groups: "Groups: "
+      rate_this: "Rate this"
+      add_to_group: "Add to group"
+
+  admin:
+    assignment: &assignment
+      assign_to:  "Assign to %{assign_to}"
+      add_to_group:  "Add to group"
+      add_to_course: "Add to course"
+      add_to_lesson: "Add to lesson"
+      add_to_exam:   "Add to exam"
+      add_to_user:   "Assign to user"
+      group:         "Group"
+      lesson:        "Lesson"
+      course:        "Course"
+      exam:          "Exam"
+
+    courses:
+      course:               "course"
+      save_course:          "Save Course"
+      index:
+        <<: *assignment
+        manage_courses:     "Manage Courses"
+        New_course:         "Add New Course"
+        Title:              "Title"
+        Description:        "Description"
+        Groups:             "Groups"
+        bulk_actions:       "Bulk Actions"
+        import_or_connect:  "Import/Connect"
+
+    exams:
+      index:
+        manage_exams:  "Manage Exams"
+        New_exam:      "Add New Exam"
+        Title:         "Title"
+        Description:   "Description"
+        Questions:     "Questions"
+        Courses:       "Courses"
+        add_to_course: "Add to course"
+      form:
+        save: "Save and add questions"
+    questions:
+      form:
+        add_question: "Save and add another question"
+      edit:
+        edit_question: "Edit question"
+      new:
+        new_question: "New question"
+
+      questions_list:
+        new_question: "New question"
+      question_editing:
+        new_question: "New question"
+
+    lessons:
+      index:
+        <<: *assignment
+        manage_lessons:     "Manage Lesssons"
+        Title:              "Title"
+        Description:        "Description"
+        Courses:            "Courses"
+        New_lesson:         "Add New Lesson"
+
+      form:
+        or:                 "or"
+    groups:
+      group:
+        enrol_user: "Enrol user"
+      new:
+      index:
+        manage_groups: "Manage Groups"
+        New_group: "Add New Group"
+        Assign_course: "Assign course"
+        public: "Public"
+        member_count: "Members"
+        course_count: "Courses"
+
+    education_assignments:
+      new:
+        <<: *assignment
+        enrol_user: "Enrol"
+
+
+
+    users:
+      index:
+        manage_users:      "Manage Users"
+        New_user:      "Add New User"
+        enrol_on_course: "Enrol on course"
+        add_to_group: "Add to group"
+
+      form:
+        role: "Role"

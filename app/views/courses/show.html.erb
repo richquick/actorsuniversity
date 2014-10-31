@@ -1,0 +1,53 @@
+<div id="<%= dom_id @course %>" data-url="<%= admin_course_path @course %>" class='hero for course'>
+  <%= image_tag course.image.url, class: "image for course" %>
+  <div class="inner">
+    <%-  if enroled? %>
+      <a class="button strong">Enrolled</a>
+    <%- else %>
+      <%= button_to "/sign_me_up_for/course/#{course.id}", class: "strong button" do %>
+        Enrol
+      <%- end %>
+    <%- end %>
+
+    <%= editable_item :h1, @course, :title %>
+
+    <div class="description"> <%= editable_item :span, @course, :description, :textarea %></div>
+    <div class="meta">
+      <%= render partial: 'tags/list', locals: {tags: course.tags, resource_type: "course"} %>
+      <%= render partial: 'lessons/lesson_counts', locals: {course: course} %>
+      <%= render partial: 'shared/complete_by'  %>
+    </div>
+  </div>
+</div>
+
+<div class="panel heading">
+  <%- if enroled? %>
+    <%= t("Progress") %>
+    <div class='progress wrap'>
+      <div class='bar wrap' data-progress='<%=@progress%>'>
+        <div class="bar">
+          <div class="indicator" style="width:<%=@progress%>%;"></div>
+        </div>
+      </div>
+      <div class="percentage wrap"><%=@progress%>% done</div>
+    </div>
+  <%- else %>
+    <%= t("Lessons") %>
+  <%- end %>
+</div>
+
+<div class="accordion of summaries for lessons">
+  <%= render partial: 'lessons/summary', collection: course.lessons %>
+</div>
+
+<div class="panel heading"><%= t("Exams") %></div>
+<ul class="list of summaries for exams">
+  <%= render partial: 'exams/summary', collection: course.exams %>
+</ul>
+
+<% if admin? %>
+  <div class="panel heading"><%= t("Groups") %></div>
+  <ul class="list of items for groups">
+    <%= render partial: 'groups/summary', collection: course.groups %>
+  </ul>
+<% end %>

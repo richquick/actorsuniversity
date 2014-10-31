@@ -1,0 +1,9 @@
+set -e
+
+CI=true RAILS_ENV=test bundle install --path vendor/bundle
+bundle exec rake db:setup
+bundle exec rake db:test:prepare
+bundle exec rake spec
+bundle exec rake teaspoon
+
+bundle exec ruby ./bin/tag_current_sha.rb

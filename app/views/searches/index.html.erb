@@ -1,0 +1,23 @@
+<h1><%= t('Search_results') %></h1>
+<div class="grid" id='filterable_list'>
+
+  <% if @lessons.any? %>
+    <ul class="jigsaw_grid list for lessons">
+      <% @lessons.each do |lesson| %>
+        <li class="jigsaw_item"><div class="inner"><%= render partial: 'searches/lesson', locals: {lesson: lesson} %></div></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p><%= t('No_results') %></p>
+    <hr />
+    <h1><%= t('Other_results') %></h1>
+    <ul class="jigsaw_grid list for lessons">
+      <% @alternative.each do |lesson| %>
+        <li class="jigsaw_item"><div class="inner"><%= render partial: 'searches/lesson', locals: {lesson: lesson} %></div></li>
+      <% end%>
+    </ul>
+
+  <% end %>
+  
+
+</div>

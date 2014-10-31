@@ -1,0 +1,19 @@
+<li class='jigsaw_item' id="lesson_<%=lesson.id %>">
+  <%= link_to lesson.lesson do %>
+    <%= image_tag lesson.thumbnail %>
+  <% end %>
+  <div class="inner">
+    <%= link_to lesson.lesson do %><h2 class='title'><%= lesson.title %></h2><% end %>
+    <div class='clippable description'>
+      <%= lesson.description %>
+    </div>
+
+    <%= render partial: "/tags/tags", locals: {tags: lesson.tags} %>
+
+    <div class='complete_by'><!-- TECHDEBT //-->
+      21st December 2013
+    </div>
+  </div>
+</li>
+
+

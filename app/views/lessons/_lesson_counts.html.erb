@@ -1,0 +1,10 @@
+<ul class='list of items for media_type counts'>
+  <% course.lessons.group_by(&:media_type).each do |media, lessons| %>
+    <li class='<%= media %> resource'>
+      <%= lessons.count %>
+    </li>
+  <%- end %>
+  <%- if course.exams.count > 0 %>
+    <li class="exam resource"><%= course.exams.count %></li>
+  <%- end %>
+</ul>

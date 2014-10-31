@@ -1,0 +1,16 @@
+.video_preview {
+  z-index: $ch_video_preview_zindex;
+  position: $ch_video_preview_position;
+  top: $ch_video_preview_top;
+  h2 {
+    font-size: $ch_video_preview_h2_font_size;
+    display: $ch_video_preview_h2_display;
+  }
+  img {
+    margin-bottom: $ch_video_preview_img_margin_bottom; 
+    width: $ch_video_preview_img_width;
+    margin-right: $ch_video_preview_img_margin_right;
+  }
+}
+
+// TONY

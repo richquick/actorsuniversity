@@ -1,0 +1,11 @@
+<head>
+  <title><%= app_name %></title>
+
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <!--[if lt IE 9]><%= stylesheet_link_tag    "application.no_media", media: "all", "data-turbolinks-track" => true %><![endif]-->
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <%= csrf_meta_tags %>
+
+  <%= yield :head %>
+</head>

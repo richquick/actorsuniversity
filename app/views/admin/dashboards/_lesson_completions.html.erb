@@ -1,0 +1,18 @@
+<h2>Lesson Completions</h2>
+<div class="content container rated">
+  <div class="half">
+    <div class="title strip"><span>▲</span> Top</div>
+    <ul class="list of links">
+      <%- @dashboard.most_popular_lessons.each do |lesson| %>
+        <li><%=link_to lesson.title, lesson %></li>
+      <% end %>
+    </ul>
+   </div>
+  <div class="half last">
+    <div class="title strip"><span>▼</span> Bottom</div>
+    <ul class="list of links">
+      <%- @dashboard.least_popular_lessons.each do |lesson| %>
+        <li><%=link_to lesson.title, lesson %></li>
+      <% end %>
+    </ul>
+  </div>

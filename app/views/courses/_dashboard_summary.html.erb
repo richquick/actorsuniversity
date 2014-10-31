@@ -1,0 +1,10 @@
+<li>
+  <div class="avatar column">
+    <%= image_tag course.image.url(:web, :preview) %>
+  </div>
+  <div class="info column">
+    <div><%= course.title %></div>
+    <div class="text weak"></div>
+    <%= link_to "See Course", course %>
+  </div>
+</li>

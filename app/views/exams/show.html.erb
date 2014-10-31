@@ -1,0 +1,30 @@
+<div class='hero for exam'>
+  <div class="inner">
+    <%= render partial: '/exams/exam_start_or_retake', locals: {exam: exam, title: exam.title } %>
+    <h1><%= exam.title %></h1>
+    <div class="description"><%= exam.description %></div>
+    <%= render partial: 'tags/list', locals: {resource_type: "exam", tags: exam.tags} %>
+    <%= render partial: 'shared/complete_by', locals: {to_complete: exam}  %>
+  </div>
+</div>
+
+<div class="panel heading"><%=t('.belongs_to_these_courses')%></div>
+
+<div class='accordion list of summaries of courses'>
+  <%- exam.courses.each do |c| %>
+    <div class='item for resource'>
+      <div class='two_column grid'>
+        <div class='main content expander'><%= c.title %></div>
+        <div class='second content'>
+          <div class="actions">
+            <%= render partial: 'shared/complete_by', locals: {to_complete: c}  %>
+          </div>
+        </div>
+      </div>
+      <div class='expandable'>
+        <div class='description'><%= c.description %></div>
+        <%= render partial: 'tags/list', locals: {resource_type: "lesson", tags: c.tags} %>
+      </div>
+    </div>
+  <%- end %>
+</div>

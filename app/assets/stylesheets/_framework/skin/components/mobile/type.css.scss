@@ -1,0 +1,44 @@
+// Type
+
+@import url($sk_default_font_import);
+
+body,
+button,
+p {
+  font-family: $sk_default_font_family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $sk_heading_color;
+}
+
+label {
+  color: $sk_label_color;
+}
+
+th {
+  color: $sk_th_color;
+}
+
+.stripe {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    a:not(.button):not(.lozenge):not(.resource):not(.x):not(.x):not(.x) {
+      text-decoration: none;
+      color: $sk_heading_link_color;
+      &:hover {
+        color: $sk_heading_link_hover_color;
+      }
+    }
+  }
+}

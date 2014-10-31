@@ -1,0 +1,12 @@
+// Wells
+
+.well {
+  padding: $ch_well_padding;
+  margin: $ch_well_margin;
+  background: $ch_well_color;
+  @include rounded_corners($ch_well_radius);
+  @include inner_shadow($ch_well_inset_left_offset,$ch_well_inset_right_offset,$ch_well_inset_blur,$ch_well_inset_color);
+  &:not(.clear) {
+    border: $ch_well_border_width solid $ch_well_border_color;
+  }
+}

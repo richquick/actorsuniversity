@@ -1,0 +1,31 @@
+<h1><%= assign_to.title %></h1>
+<%= form_for(assignment, url: form_path, as: :education_assignment) do |f| %>
+  <%= render partial: 'errors', locals: {errors: assignment.errors} %>
+
+  <div class="field">
+    <%- raise NotImplemented unless assignee_id %>
+
+    <%= f.label :"#{assign_to_type}_id", t(".#{assign_to_type}") %>
+
+
+    <%= f.select :"#{assign_to_type}_id", assign_to.select_options, 
+            { include_blank: true },
+            { class: 'chosen-select'}
+    %>
+    <% if assignment.respond_to? :complete_by_date %>
+      <%= f.label :complete_by_date %>
+      <%= f.text_field :complete_by_date, class: "datepicker" %>
+
+      <%= f.label :complete_within, "Complete within (number of days)" %>
+      <%= f.text_field :complete_within %>
+    <% end %>
+
+  </div>
+  <div class="button_holder">
+    <%= f.button t(".assign_to", assign_to: assign_to_type), :class => "add iframe_closer" %>
+  </div>
+<%- end %>
+
+<ul class="separated condensed list of links">
+  <li><%= link_to t("back"), admin_courses_path %></li>
+</ul>

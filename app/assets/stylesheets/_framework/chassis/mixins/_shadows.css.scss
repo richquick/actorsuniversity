@@ -1,0 +1,18 @@
+// Shadow mixins
+@mixin box_shadow($left_offset,$right_offset,$blur,$color) {
+  -webkit-box-shadow: $left_offset $right_offset $blur $color;
+  -moz-box-shadow: $left_offset $right_offset $blur $color;
+  box-shadow: $left_offset $right_offset $blur $color;
+}
+
+@mixin inner_shadow($left_offset,$right_offset,$blur,$color) {
+  -webkit-box-shadow: inset $left_offset $right_offset $blur $color;
+  -moz-box-shadow: inset $left_offset $right_offset $blur $color;
+  box-shadow: inset $left_offset $right_offset $blur $color;
+}
+
+@mixin text_shadow ($left_offset,$right_offset,$blur,$color) {
+  -webkit-text-shadow: $left_offset $right_offset $blur $color;
+  -moz-text-shadow: $left_offset $right_offset $blur $color;
+  text-shadow: $left_offset $right_offset $blur $color;
+}

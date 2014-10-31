@@ -1,0 +1,6 @@
+// Radius Mixins
+
+@mixin lozenge($background_color){
+  background-color: $background_color;
+  @include rounded_corners(1000px);
+}

@@ -1,0 +1,9 @@
+// Panels
+
+.panel {
+  &.tight {
+    min-width: $ch_tight_panel_tablet_min_width;
+    max-width: $ch_tight_panel_tablet_max_width;
+    @include auto_margins();
+  }
+}

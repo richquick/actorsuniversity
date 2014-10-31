@@ -1,0 +1,28 @@
+<tr>
+  <th colspan='2'>
+    <%= r.question_text %>
+  </th>
+  <th></th>
+  <th>
+    <% unless r.score_correct.zero? %>
+      <span class='correct'>
+        Correct: <%= r.score_correct %>
+      </span>
+    <% end %>
+
+    <% unless r.score_incorrect.zero? %>
+      <span class='incorrect'>
+          Incorrect: <%= r.score_incorrect %>
+      </span>
+    <% end %>
+  </th>
+  <th>
+    <span class='total'>
+      <%= r.score_total %>
+    </span>
+    /
+    <span class='max '>
+       <%= r.score_max %>
+    </span>
+ </th>
+</tr>

@@ -1,0 +1,6 @@
+<%- user ||= avatar_preview %>
+<%- size ||= :thumb %>
+
+<% if user.avatar_image? %>
+  <%= image_tag user.avatar_image_url(:web, size), alt: "Avatar for #{user.email}" %>
+<% end %>

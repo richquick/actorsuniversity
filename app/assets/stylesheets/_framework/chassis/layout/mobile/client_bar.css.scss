@@ -1,0 +1,7 @@
+.client.bar {
+  padding: $ch_client_bar_padding_vertical $ch_client_bar_padding_horizontal;
+  height: $ch_client_bar_image_height + $ch_client_bar_padding_vertical + 2;
+  img {
+    height: $ch_client_bar_image_height; 
+  }
+}

@@ -1,0 +1,8 @@
+<h1><%= t("edit_course") %></h1>
+
+<%= render 'form' %>
+
+<ul class="separated condensed list of links">
+  <li><%= link_to t("show"), [:admin, @course] %></li>
+  <li><%= link_to t("back"), admin_courses_path %></li>
+</ul>

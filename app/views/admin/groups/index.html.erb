@@ -1,0 +1,47 @@
+<div class="admin table view">
+<h1><%= t('.manage_groups') %></h1>
+<%= link_to t(".New_group"), new_admin_group_path, :class => "new strong button" %>
+<hr />
+
+<table class="data groups">
+  <thead>
+    <tr>
+      <th><%= t("Name") %></th>
+      <th><%= t(".public") %></th>
+      <th><%= t(".member_count") %></th>
+      <th><%= t(".course_count") %></th>
+      <th span="4" width="15%"><%= t("Actions") %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @groups.each do |group| %>
+      <tr id="group_<%= group.id %>">
+        <td><%= link_to group.name, group %></td>
+        <td class="alt_position"><%= group.public ? "✓" : "" %></td>
+        <td class="alt_position">
+          <%= group.users.count %>
+        </td>
+        <td class="alt_position"><%= group.courses.count %></td>
+        <td class="alt_position">
+          <ul class="list of dropdown links">
+            <li class="toggle"><a class="new weak actions button" href="#">Actions</a>
+            <ul class="dropdown">
+              <li>
+                <%= link_to t(".Assign_course"), admin_assign_to_path(:group, group.id, :course),
+                data: {"fancybox-type" => "iframe"}, :class => "fancybox iframe add button" %>
+              </li>
+
+              <li class="divider"></li>
+              <li><%= link_to t("show"), group, :class => "show button" %></li>
+              <li><%= link_to t("edit"), edit_admin_group_path(group), :class => "edit button" %></li>
+              <li><%= link_to t("delete"), [:admin, group], method: :delete, data: { confirm: 'Are you sure?' }, :class => "delete button" %></li>
+            </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

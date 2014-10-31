@@ -1,0 +1,10 @@
+// Alerts
+
+.flash {
+  @include rounded_corners($sk_flash_radius);
+  background: $sk_flash_color;
+  color: #fff;
+  &.alert {
+    background: $sk_flash_warning_color;
+  }
+}

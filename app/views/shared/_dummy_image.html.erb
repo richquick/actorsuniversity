@@ -1,0 +1,4 @@
+<div class="image wrap">
+  <%- subtype = Rails.env.production? ? "/business" : '' %>
+  <img src='http://lorempixel.com/200/<%= 200 +  rand(150) %>/<%= subtype %>'/>
+</div>

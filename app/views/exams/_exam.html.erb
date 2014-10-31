@@ -1,0 +1,20 @@
+<li class='jigsaw_item' id="exam_<%=exam.id %>">
+  <%= link_to exam do %>
+    <%= render 'shared/dummy_image' %>
+  <% end %>
+  <div class="inner">
+    <%= link_to exam do %><h2 class='title'><%= exam.title %></h2><% end %>
+    <div class='clippable description'>
+      <%= exam.description %>
+    </div>
+    <%= exam.questions.size %> questions
+    <br/>
+
+    <%= render partial: "/tags/tags", locals: {tags: exam.tags} %>
+
+    <div class='complete_by'>
+      19th December 2013
+    </div>
+  </div>
+</li>
+

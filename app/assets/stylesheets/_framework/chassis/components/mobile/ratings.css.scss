@@ -1,0 +1,12 @@
+// Ratings
+
+.star_rating_holder {
+  @include clearfix();
+  b {
+    float: left;
+    padding-right: $ch_star_rating_label_padding_right;
+  }
+  .star_rating {
+    float: left;
+  }
+}

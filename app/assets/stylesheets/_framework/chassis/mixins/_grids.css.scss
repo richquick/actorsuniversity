@@ -1,0 +1,7 @@
+// Gradient Mixins
+@mixin column($width){
+  width: $width;
+  @include clearfix();
+}
+
+  

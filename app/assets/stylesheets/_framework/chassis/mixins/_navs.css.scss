@@ -1,0 +1,13 @@
+// Navs
+
+@mixin horizontal_nav($height,$width,$color){
+  min-height: $height;
+  width: $width;
+  background: $color;
+  @include clearfix();
+}
+
+@mixin horizontal_nav_with_gradient($height,$width,$gradient_top,$gradient_bottom){
+  @include horizontal_nav ($height,$width,$gradient_top);
+  @include vertical_gradient($gradient_top,$gradient_bottom);
+}

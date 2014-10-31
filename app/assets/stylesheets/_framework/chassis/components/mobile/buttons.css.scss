@@ -1,0 +1,103 @@
+// Buttons
+
+// Specific styles for a.button
+a.button {
+	display: inline-block;
+  text-decoration: none;
+}
+
+// Specific styles for button
+button {
+	border: none;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+a.button,
+button,
+.button {
+  background-color: $ch_button_background_color;
+  color: $ch_button_text_color;
+  padding: $ch_button_padding;
+  font-size: $ch_button_font_size;
+  &:hover {
+    background: $ch_button_hover_background;
+  }
+  &.weak {
+    font-size: $ch_weak_button_font_size;
+    padding: $ch_weak_button_padding;
+  }
+  &.condensed:not(.x) {
+    background-color: $ch_condensed_button_background_color;
+    color: $ch_condensed_button_color;
+    font-size: $ch_condensed_button_font_size;
+    margin-top: $ch_condensed_button_top_margin;
+    padding-left: $ch_condensed_button_padding_left;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &.add,
+  &.new {
+    background-image: asset_url($ch_light_add_icon_url);
+    @include icon($ch_icon_size,$ch_icon_padding_left);
+  }
+
+  &.search {
+    background-image: asset_url($ch_light_search_icon_url);
+    @include icon($ch_icon_size,$ch_icon_padding_left);
+  }
+  &.show {
+    background-image: asset_url($ch_light_search_icon_url);
+    @include icon($ch_icon_size,$ch_icon_padding_left);
+  }
+  &.delete {
+    background-image: asset_url($ch_light_delete_icon_url);
+    @include icon($ch_icon_size,$ch_icon_padding_left);
+  }
+  &.minus {
+    background-image: asset_url($ch_light_minus_icon_url);
+    @include icon($ch_icon_size,$ch_icon_padding_left);
+  }
+  &.edit {
+    background-image: asset_url($ch_light_edit_icon_url);
+    @include icon($ch_icon_size,$ch_icon_padding_left);
+  }
+  &.weak,
+  &.condensed {
+    @include icon($ch_weak_icon_size,$ch_weak_icon_padding_left);
+  }
+  &.condensed {
+    &.add,
+    &.new {
+      background-image: asset_url($ch_add_icon_url);
+    }
+
+    &.search {
+      background-image: asset_url($ch_search_icon_url);
+    }
+    &.show {
+      background-image: asset_url($ch_search_icon_url);
+    }
+    &.delete {
+      background-image: asset_url($ch_delete_icon_url);
+    }
+    &.minus {
+      background-image: asset_url($ch_minus_icon_url);
+    }
+    &.edit {
+      background-image: asset_url($ch_edit_icon_url);
+    }
+  }
+  &.strong {
+    font-size: $ch_strong_button_font_size;
+    padding: $ch_strong_button_padding;
+  }
+  // TONY
+  &.alt {
+    background-color: $ch_alt_button_background;
+    &:hover {
+      background-color: $ch_alt_button_hover_background;
+    }
+  }
+}

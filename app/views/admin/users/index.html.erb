@@ -1,0 +1,49 @@
+<div class="admin table view">
+<h1><%= t('.manage_users') %></h1>
+<%= link_to t(".New_user"), new_admin_user_path, :class => "new strong button" %>
+<hr />
+
+<%= will_paginate users %>
+<table class="data">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th><%= t("Name") %></th>
+      <th><%= t("Email") %></th>
+      <th><%= t("Roles") %></th>
+      <th>Courses</th>
+      <th>Lessons</th>
+      <th colspan=2 width="15%"><%= t("Actions") %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% users.each do |user| %>
+      <tr id="user_<%= user.id %>">
+        <td><%= render partial: 'users/avatar_preview', locals: {user: user} %></td>
+        <td><%= link_to user.name, [:admin, user] %></td>
+        <td><%= link_to user.email, [:admin, user] %></td>
+        <td><%= user.roles.map(&:name).join(" ") %></td>
+        <td><%= user.courses.size() %></td>
+        <td><%= user.lessons.size() %></td>
+        <td class="alt_position">
+          <ul class="list of dropdown links">
+            <li class="toggle"><a class="new weak actions button" href="#">Actions</a>
+            <ul class="dropdown">
+              <li><%= link_to t(".add_to_group"), admin_assign_to_path(:user, user.id, :group), 
+                data: {"fancybox-type" => "iframe"}, :class => "fancybox iframe add button" %>
+              <li><%= link_to t(".enrol_on_course"), admin_assign_to_path(:user, user.id, :course),
+                data: {"fancybox-type" => "iframe"}, :class => "fancybox iframe add button" %>
+              <li class="divider"></li>
+              <li><%= link_to t("show"), [:admin, user], :class => "show button" %></li>
+              <li><%= link_to t("edit"), edit_admin_user_path(user), :class => "edit button" %></li>
+              <li><%= link_to t("delete"), [:admin, user], method: :delete, data: { confirm: 'Are you sure?' }, :class => "delete button" %></li>
+            </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

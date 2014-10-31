@@ -1,0 +1,14 @@
+// Buttons
+
+a.button,
+button {
+  background-color: $sk_button_background_color;
+  @include rounded_corners($sk_button_radius);
+  font-weight: $sk_button_font_weight;
+  &:hover {
+    background-color: $sk_button_background_color_hover;
+  }
+  &:active {
+    background-color: $sk_button_background_color_hover;
+  }
+}

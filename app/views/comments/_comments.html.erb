@@ -1,0 +1,7 @@
+<div id="comments"></div>
+  <ul class='list of items for comments'>
+    <%= render partial: "/comments/comment", collection: commentable.public_comments %>
+  </ul>
+
+  <%= render partial: "/comments/form", locals: {comment: Comment.new(commentable: commentable)} %>
+</div>

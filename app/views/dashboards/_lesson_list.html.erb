@@ -1,0 +1,10 @@
+<div class="main column lesson_list_column">
+  <%= render 'users/level_bar' %>
+  <%= render 'lessons/lesson_bar' %>
+
+  <div class="timeline content container">
+    <ul class="list of links for lesson list">
+      <%= render partial: 'lessons/dashboard_summary', collection: @dashboard.lessons_to_do %>
+    </ul>
+  </div>
+</div>

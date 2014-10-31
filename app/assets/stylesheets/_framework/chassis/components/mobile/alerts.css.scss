@@ -1,0 +1,10 @@
+// Alerts
+
+.flash {
+  background: $ch_flash_background;
+  padding: $ch_flash_padding;
+  margin: $ch_flash_margin;
+  &.error {
+    border: $ch_flash_error_border;
+  }
+}

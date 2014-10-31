@@ -1,0 +1,16 @@
+development: &pg
+  adapter: postgresql
+  username: <%= ENV['USER'].to_s.strip %>
+  password:
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  database: actors_university_development
+
+test: &test
+  <<: *pg
+  database: actors_university_test
+
+production:
+  <<: *pg
+  database: actors_university_development

@@ -1,0 +1,55 @@
+<div class="admin table view">
+  <h1><%= t('.manage_courses') %></h1>
+  <%= link_to t(".New_course"), new_admin_course_path, :class => "new strong button" %>
+  <hr />
+
+  <%= will_paginate @courses %>
+
+  <table class="data">
+    <thead>
+      <tr>
+        <th>Preview</th>
+        <th><%= t(".Title") %></th>
+        <th width="30%"><%= t(".Groups") %></th>
+        <th>Lessons</th>
+        <th colspan=2 width="15%"><%= t("Actions") %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @courses.each do |course| %>
+        <tr id="course_<%= course.id %>">
+          <td>
+            <%= link_to course do %>
+              <%= image_tag course.thumbnail %>
+            <% end %>
+          </td>
+
+
+          <td>
+            <%= link_to course.title, course %>
+          </td>
+          <td><%= course.groups.map(&:name).join(", ") %></td>
+          <td><%= course.lessons.count %></td>
+          <td class="alt_position">
+            <ul class="list of dropdown links">
+              <li class="toggle"><a class="new weak actions button" href="#">Actions</a>
+              <ul class="dropdown">
+                <li><%= link_to t(".add_to_group"), admin_assign_to_path(:course, course.id, :group),
+                    data: {"fancybox-type" => "iframe"}, :class => "fancybox iframe add button" %>
+                </li>
+ 
+                <li class="divider"></li>
+                <li><%= link_to t("show"), course, :class => "show button" %></li>
+                <li><%= link_to t("edit"), edit_admin_course_path(course), :class => "edit button" %></li>
+                <li><%= link_to t("delete"), [:admin, course], method: :delete, data: { confirm: 'Are you sure?' }, :class => "delete button" %></li>
+              </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+

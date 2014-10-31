@@ -1,0 +1,44 @@
+<h1>
+  Upload a new resource file for:
+</h1>
+
+<h3>
+  Lesson:
+  <%= @resource_file.lesson.title %>
+</h3>
+<div>
+  Description:
+  <%= @resource_file.lesson.description %>
+</div>
+
+<div>
+  Original file:
+  <%= @resource_file.filename_without_path %>
+  <%= image_tag @resource_file.resource_file.url(:preview) %>
+</div>
+
+<% if @resource_file.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@resource_file.errors.count, "problem") %> <%= t("stopped_this_being_saved") %></h2>
+
+    <ul>
+    <% @resource_file.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+<%= form_for [:admin, @resource_file], :html => { :multipart => true } do |f| %>
+  <label class="fileinput-button with heading">
+    <h2>New file</h2>
+  </label>
+  <%= f.hidden_field :lesson_token %>
+  <%= f.file_field :resource_file %>
+
+  <div class="actions">
+    <%= f.submit "Save" %>
+  </div>
+<% end %>
+

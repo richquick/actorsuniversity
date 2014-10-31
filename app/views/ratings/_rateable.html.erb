@@ -1,0 +1,6 @@
+<div class="star_rating_holder">
+  <% rating_types.each do |rateable_type| %>
+    <%= rateable_type.to_s.humanize %> <%= rating_for rateable, rateable_type %>
+  <% end %>
+</div>
+

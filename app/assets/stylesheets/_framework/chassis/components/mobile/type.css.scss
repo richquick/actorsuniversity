@@ -1,0 +1,38 @@
+// Type
+
+body,
+p,
+button {
+  font-family: $ch_default_font_family;
+}
+
+body,
+p {
+  color: $ch_default_font_color;
+}
+
+.stripe {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    a:not(.button):not(.lozenge):not(.resource):not(.x):not(.x):not(.x) {
+      text-decoration: none;
+      color: $ch_heading_link_color;
+      &:hover {
+        color: $ch_heading_link_hover_color;
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: $ch_h1_font_size;
+}
+
+body {
+  color: $ch_text_color;
+}

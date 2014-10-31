@@ -1,0 +1,25 @@
+<h1>Listing admin_tags</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_tags.each do |admin_tag| %>
+      <tr>
+        <td><%= link_to t("show"), admin_tag %></td>
+        <td><%= link_to t("edit"), edit_admin_tag_path(admin_tag) %></td>
+        <td><%= link_to t("delete"), admin_tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tag', new_admin_tag_path %>

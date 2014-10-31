@@ -1,0 +1,28 @@
+<%- if @lesson.resource_file %>
+  <%- css_class = @lesson.filename.present? ? "hide" : "" %>
+  <div class="ordered_list_item item_1 part a <%= css_class %>">
+    <div id="fileupload" class="fileupload-buttonbar normal fileupload">
+      <%= form_for [:admin, @lesson.resource_file], :html => { :multipart => true } do |f| %>
+        <label class="fileinput-button with heading">
+          <h2><%= t("Upload_a_file") %></h2>
+        </label>
+        <%= f.hidden_field :lesson_token %>
+        <%= f.file_field :resource_file %>
+      <% end %>
+    </div>
+
+    <div class="fileupload-content">
+      <table class="files"></table>
+      <div id="filename"></div>
+      <div id="filesize"></div>
+      <div class="fileupload-progressbar"></div>
+    </div>
+
+    <%- css_class = @lesson.filename.present? ? "" : "hide" %>
+
+    <%= form_for [:admin, @lesson.resource_file], url: "/admin/resource_files/#{@lesson.token}", method: :delete, html: {class: css_class} do |f| %>
+      <%= f.hidden_field :lesson_token %>
+      <%= f.submit "x" %>
+    <% end %>
+  </div>
+<% end %>

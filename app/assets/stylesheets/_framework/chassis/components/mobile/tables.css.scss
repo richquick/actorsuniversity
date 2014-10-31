@@ -1,0 +1,56 @@
+table.table.of.question_responses{
+  margin: 0px;
+
+  tr.correct {
+    td {
+      color: green;
+    }
+  }
+
+  tr.incorrect {
+    td {
+      color: #c00;
+    }
+  }
+
+
+  th {
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  td.correct,th.correct,span.correct {
+    color: green
+  }
+
+  td.incorrect,th.incorrect,span.incorrect {
+    color: #c00;
+  }
+
+
+  td{
+    text-align: left;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 10px 0px;
+  }
+
+  tr.not_guessed_but_correct_answer {
+    td{
+      color: #c00;
+    }
+  }
+
+  tr {
+    background: none;
+  }
+}
+
+//TECHDEBT
+table.table.of.lessons{
+  tr.archived{
+    td{
+      background-color: #ddd;
+      text-decoration: italic;
+    }
+  }
+}

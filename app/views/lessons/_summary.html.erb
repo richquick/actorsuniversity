@@ -1,0 +1,20 @@
+<%- lesson = summary %>
+<div class='item for <%= lesson.media_type %> resource'>
+  <div class='two_column grid'>
+    <div class='main content expander'><%= lesson.title %></div>
+
+    <div class='second content'>
+      <div class="actions">
+        <% if completed?(lesson) %>
+          <%= t(".completed") %>
+        <% end %>
+
+        <%= link_to t(".take_lesson"), lesson.lesson, :class => "button" %>
+      </div>
+    </div>
+  </div>
+  <div class='expandable'>
+    <div class='description'><%= lesson.description %></div>
+    <%= render partial: 'tags/list', locals: {resource_type: "lesson", tags: lesson.tags} %>
+  </div>
+</div>

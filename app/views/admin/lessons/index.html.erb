@@ -1,0 +1,52 @@
+<div class="admin table view">
+  <h1><%= t('.manage_lessons') %></h1>
+  <%= link_to t(".New_lesson"), new_admin_lesson_path, :class => "new strong button" %>
+  <hr />
+
+  <%= will_paginate lessons %>
+
+  <table class="data table of lessons">
+    <thead>
+      <tr>
+        <th>Preview </th>
+        <th><%= t(".Title") %></th>
+        <th><%= t(".Courses") %></th>
+        <th colspan=2 width="15%"><%= t("Actions") %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @lessons.each do |lesson| %>
+        <tr id="lesson_<%= lesson.id %>" class="<%= lesson.archived? ? 'archived' : '' %>">
+          <td>
+            <%= link_to lesson do %>
+              <%= image_tag lesson.thumbnail %>
+            <% end %>
+          </td>
+
+          <td><%= link_to lesson.title, lesson %></td>
+          <td><%= lesson.courses.map(&:title).join(", ") %></td>
+          <td class="alt_position">
+            <ul class="list of dropdown links">
+              <li class="toggle"><a class="new weak actions button" href="#">Actions</a>
+                <ul class="dropdown">
+                  <% if lesson.archived? %>
+                    <li><%= link_to t("unarchive"), admin_lesson_archivement_path(lesson), method: :delete, data: { confirm: 'Are you sure?' }, :class => "weak add button" %></li>
+                  <% else %>
+                    <li>
+                      <%= link_to t(".add_to_course"), admin_assign_to_path(:lesson, lesson.id, :course),
+                        data: {"fancybox-type" => "iframe"}, :class => "fancybox iframe add button" %>
+                    </li>
+                    <li class="divider"></li>
+                    <li><%= link_to t("edit"), edit_admin_lesson_path(lesson), :class => "edit button" %></li>
+                    <li><%= link_to t("archive"), admin_lesson_archivement_path(lesson), method: :put, data: { confirm: 'Are you sure?' }, :class => "delete button" %></li>
+                  <% end %>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

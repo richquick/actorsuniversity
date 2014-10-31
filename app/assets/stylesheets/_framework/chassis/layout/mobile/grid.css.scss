@@ -1,0 +1,38 @@
+// Grid
+
+body {
+  margin: 0;
+  margin-top: $ch_client_bar_image_height*2 + (2 * $ch_client_bar_padding_vertical);
+}
+
+.hide {
+  display: none;
+}
+
+//TECHDEBT
+.background.image.hack{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+}
+.stripe {
+  .wrapper {
+    padding: $ch_stripe_wrapper_padding;
+  }
+}
+
+.grid {
+  .section {
+    padding-bottom: $ch_grid_section_padding_bottom;
+    &.distinct {
+      padding-top: $ch_grid_section_distinct_padding_top;
+    }
+  }
+  .content {
+    &.with.distinct_section {
+      padding-top: $ch_grid_content_with_distinct_section;
+    }
+  }
+}
+

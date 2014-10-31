@@ -1,0 +1,18 @@
+<%- course = summary %>
+<div class='item'>
+  <div class='two_column grid'>
+    <div class='main content expander'><%= course.title %></div>
+    <div class='second content'>
+      <div class="actions">
+        <%= link_to "✘", "/admin/unassign/lesson/#{@lesson.id}/from/course/#{course.id}",
+        method: :delete, data: { confirm: 'Are you sure?' }, :class => "delete" if admin? %>
+
+      </div>
+    </div>
+  </div>
+  <div class='expandable'>
+    <%= course.description %>
+
+    <%= render partial: 'tags/list', locals: {resource_type: "course", tags: course.tags} %>
+  </div>
+</div>

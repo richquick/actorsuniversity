@@ -1,0 +1,39 @@
+// Grid
+
+.grid {
+  @include clearfix();
+  &.two_column {
+    .content {
+      padding-bottom: $ch_two_col_content_padding_bottom;
+      &.main {
+        float: $ch_two_col_main_column_float;
+        @include column($ch_two_col_main_column_width_tablet);
+      }
+      &.second {
+        float: $ch_two_col_second_column_float;
+        @include column($ch_two_col_second_column_width_tablet);
+      }
+    }
+    &.alternative.layout {
+      .content {
+        padding-top: $ch_two_col_alt_content_padding_top;
+        &.main {
+          @include column($ch_two_col_alt_main_column_width_tablet);
+        }
+        &.second {
+          @include column($ch_two_col_alt_second_column_width_tablet);
+        }
+      }
+    }
+    &.reversed {
+      .content {
+        &.main {
+          float: $ch_main_column_float_reversed;
+        }
+        &.second {
+          float: $ch_second_column_float_reversed;
+        }
+      }
+    }
+  }
+}

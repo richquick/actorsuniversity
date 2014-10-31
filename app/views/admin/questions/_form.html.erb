@@ -1,0 +1,41 @@
+<%= nested_form_for([:admin, @exam, @question]) do |f| %>
+  <% if @question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@question.errors.count, "problem") %> <%= t("stopped_this_being_saved") %></h2>
+
+      <ul>
+        <% @question.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= f.label :question_text, "Question" %>
+  <%= f.text_field :question_text %>
+  <%= f.label :tag_line %>
+  <%= f.text_field :tag_line %>
+
+  <ol class="form for list of answers">
+    <%= f.fields_for :answers, wrapper: false do |a| %>
+      <li class="fields">
+        <%= a.label :text, "Answer" %>
+        <%= a.text_field :text %>
+        <%= a.label :correct, "Correct?" %>
+        <%= a.check_box :correct %>
+        <%= a.link_to_remove "Remove" %>
+      </li>
+    <% end %>
+    <%= f.link_to_add "Add an answer", :answers %>
+  </ol>
+
+  <ul class='condensed list of links'>
+    <li> <%= f.submit t(".add_question") %> </li>
+    <li> OR </li>
+  </ul>
+
+<% end %>
+<ul class='condensed list of links'>
+<li> <%= render 'admin/exam_finalizations/finalize_button' %> </li>
+</ul>

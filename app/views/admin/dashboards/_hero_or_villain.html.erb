@@ -1,0 +1,10 @@
+<li>
+  <div class="avatar column">
+    <% url = user.avatar_image.url(:web, :thumb) || asset_url("_framework/chassis/placeholders/head.png") %>
+    <%= image_tag url, alt: "Head" %>
+  </div>
+  <div class="info column">
+    <div><%= link_to user.name, user %></div>
+    <div class="text weak"></div>
+  </div>
+</li>

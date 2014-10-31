@@ -1,0 +1,45 @@
+// Utilities
+
+.fake_ordered_list_holder {
+  .part.a {
+    min-height: $ch_part_a_tablet_min_height;
+    max-width: $ch_parts_tablet_max_width;
+  }
+  .part.b {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $ch_parts_tablet_max_width;
+  }
+}
+
+$ch_tablet_or_width: 6%;
+$ch_tablet_or_left: 47%;
+$ch_tablet_or_padding: 50px 0;
+$ch_tablet_or_height: 150px;
+$ch_tablet_or_after_height: 40px;
+$ch_tablet_or_after_left: 50%;
+$ch_tablet_or_after_width: 1px;
+$ch_tablet_or_before_top: 0;
+$ch_tablet_or_after_top: 80px;
+
+.or {
+  position: absolute;
+  top: 0;
+  width: $ch_tablet_or_width;
+  left: $ch_tablet_or_left;
+  padding: $ch_tablet_or_padding;
+  height: $ch_tablet_or_height;
+  &:before,
+  &:after {
+    height: $ch_tablet_or_after_height;
+    left: $ch_tablet_or_after_left;
+    width: $ch_tablet_or_after_width;
+  }
+  &:before {
+    top: $ch_tablet_or_before_top;
+  }
+  &:after {
+    top: $ch_tablet_or_after_top;
+  }
+}

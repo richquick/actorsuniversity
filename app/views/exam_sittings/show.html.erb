@@ -1,0 +1,13 @@
+<div class='hero for exam_sitting' id="exam_<%=exam_sitting.id %>">
+  <div class="inner">
+    <h1 class="score result"><%= render 'exam_sittings/score' , locals: {exam_sitting: exam_sitting}%></h1>
+    <h1 class='title'>
+      <%= exam_sitting.exam_title %>
+    </h1>
+    <div class='description'>
+      <%= exam_sitting.description %>
+    </div>
+  </div>
+</div>
+
+<%= render 'question_responses/past_answers' %>

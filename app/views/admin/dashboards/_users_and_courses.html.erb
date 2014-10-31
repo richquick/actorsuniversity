@@ -1,0 +1,29 @@
+<div class="content container full">
+  <div class="courses">
+    <div class="title">Courses Uploaded</div>
+    <div class="amount"><%= Course.count %></div>
+  </div> 
+  <hr />
+  <div class="users">
+    <div class="title">Users</div>
+    <div class="amount"><%= User.count %></div>
+  </div>
+</div>
+<a class="strong button with inline fancybox" id="generate_button" href="#report_generate_pop_up">Generate report</a>
+
+<div class='redundant div for fancbox' style='display:none'>
+  <div id='report_generate_pop_up'>
+    <%= form_for @dashboard.lesson_completion_report, url: admin_report_lesson_completion_path(@dashboard.lesson_completion_report, format: :csv), method: :get  do |f| %>
+      <div class='fields'>
+        <%= f.label :start_date %>
+        <%= f.date_field :start_date %>
+
+        <%= f.label :end_date %>
+        <%= f.date_field :end_date %>
+      </div>
+      <br/>
+      <%= f.submit "Generate report", class: "strong button" %>
+    <%- end %>
+  </div>
+</div>
+

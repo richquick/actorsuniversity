@@ -1,0 +1,59 @@
+<%- placeholder = asset_url("_framework/chassis/placeholders/head.png") %>
+<div class="second column">
+  <div class="tabs">
+    <ul class="list of links tab_links">
+      <li class="active"><a href="#tab-1">People</a></li>
+      <li><a href="#tab-2">Groups</a></li>
+    </ul>
+    <div class="sidebar content container tabs_content">
+      <div id="tab-1" class="tab_content tab_show">
+        <ul class="list of links for timeline">
+          <%- @dashboard.users_list.each do |u| %>
+            <li>
+            <div class="avatar column">
+              <%- placeholder = asset_url("_framework/chassis/placeholders/head.png") %>
+              <%- url = u.avatar_image.url(:web, :thumb) || placeholder %>
+              <%= image_tag url %>
+            </div>
+            <div class="info column">
+              <div><%= link_to u.name, u %></div>
+              <div class="text weak"><%= u.job_title %></div>
+            </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <div id="tab-2" class="tab_content">
+        <ul class="list of links for timeline">
+          <%- @dashboard.groups_list.each do |g| %>
+            <li>
+            <div class="avatar column">
+              <img src="http://lorempixel.com/32/32/technics">
+            </div>
+            <div class="info column">
+              <div><%= link_to g.name, g %></div>
+              <div class="text weak clippable"><%= link_to g.description, g %></div>
+            </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h2>Courses I May Like</h2>
+  <div class="sidebar content container">
+    <ul class="list of links for timeline">
+      <%= render partial: 'courses/dashboard_summary', as: :course, collection: @dashboard.courses_i_may_like %>
+    </ul>
+  </div>
+
+  <h2>People I May Want To Follow</h2>
+
+  <div class="sidebar content container">
+    <ul class="list of links of users">
+      <%= render partial: '/users/people_i_may_want_to_follow', collection: @dashboard.people_i_may_want_to_follow, as: :user%>
+    </ul>
+  </div>
+</div>
+

@@ -1,0 +1,14 @@
+// Links
+
+a {
+  &.resource {
+    @include rounded_corners($sk_resource_link_radius);
+    padding-left: $sk_resource_link_padding_left;
+    padding-right: $sk_resource_link_padding_right;
+    background-color: $sk_resource_link_background_color;
+    background-position: $sk_resource_link_icon_padding;
+    &:hover {
+      background-color: $sk_resource_link_background_color_hover;
+    }
+  }
+}

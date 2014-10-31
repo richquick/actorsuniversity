@@ -1,0 +1,18 @@
+<% if me?(user) %>
+  <!--This is you-->
+<% elsif following = already_following?(user) %>
+  <div class="profile follow">
+    You are following <%= user.name %>
+    <%= button_to(following_path(following), method: :delete) do |f| %>
+    Unfollow
+  <% end %>
+    </div>
+<% else %>
+  <div class="profile follow">
+  <%= button_to(:followings, action: followings_path) do |f| %>
+    <%= hidden_field_tag "following[pursued_id]", {},  value: user.id %>
+    Follow
+  <% end %>
+  </div>
+<% end %>
+

@@ -1,0 +1,35 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ */
+
+// This stylesheet is for older versions of IE
+
+$ch_tablet_min: 700px;
+$ch_desktop_min: 900px;
+
+@import "_framework/chassis/mixins/*";
+@import "_framework/chassis/_variables.css.scss";
+@import "_framework/skin/_variables.css.scss";
+
+@import "_framework/chassis/components/mobile/*";
+@import "_framework/chassis/layout/mobile/*";
+@import "_framework/skin/components/mobile/*";
+@import "_framework/skin/layout/mobile/*";
+
+@import "_framework/chassis/components/tablet/*";
+@import "_framework/chassis/layout/tablet/*";
+@import "_framework/skin/components/tablet/*";
+@import "_framework/skin/layout/tablet/*";
+
+@import "_framework/chassis/components/desktop/*";
+@import "_framework/chassis/layout/desktop/*";
+@import "_framework/skin/components/desktop/*";
+@import "_framework/skin/layout/desktop/*";

@@ -1,0 +1,17 @@
+<%- f.object.user_phone_numbers.build if f.object.user_phone_numbers.none? %>
+
+<ul class="form for list of user_phone_numbers">
+
+  <%= f.fields_for :user_phone_numbers, wrapper: false do |l| %>
+    <li class="fields">
+        <%= l.select :phone_number_type, [
+      %w(Mobile mobile),
+      %w(Office office),
+      %w(Other other) ] %>
+
+      <%= l.text_field :number %>
+      <%= l.link_to_remove "Remove" %>
+    </li>
+  <% end %>
+  <%= f.link_to_add "Add a number", :user_phone_numbers %>
+</ul>

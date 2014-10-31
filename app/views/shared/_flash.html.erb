@@ -1,0 +1,6 @@
+<%- flash.to_hash.each do |level, message| %>
+  <%- if message.present? %>
+    <div class="flash <%=level%>"><%= message %></div>
+  <%- end %>
+<%- end %>
+

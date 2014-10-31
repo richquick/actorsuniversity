@@ -1,0 +1,6 @@
+<li>
+  <%= link_to user do %>
+    <% url = user.avatar_image.url(:web, :thumb) || '/assets/_framework/chassis/placeholders/head.png' %>
+    <%= image_tag(url, title: user.name, alt: user.name) %>
+  <% end %>
+</li>

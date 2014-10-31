@@ -1,0 +1,18 @@
+<%- user = user_preview %>
+
+<div class='item for user'>
+  <div class='two_column grid'>
+    <div class='main content expander'>
+      <%= image_tag user.avatar_image.url(:web, :thumb) %>
+      <%= link_to (user.name || user.email), user %>
+    </div>
+
+    <div class='second content'>
+      <%= render partial: 'tags/list', locals: {resource_type: "user", tags: user.skills} %>
+      <%= render partial: 'tags/list', locals: {resource_type: "user", tags: user.interests} %>
+    </div>
+  </div>
+  <div class='expandable'>
+    <div class='description'><%= link_to user.bio, user %></div>
+  </div>
+</div>

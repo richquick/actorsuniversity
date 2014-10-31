@@ -1,0 +1,23 @@
+<%= form_for [:admin, @lesson] do |f| %>
+  <%= f.hidden_field :token %>
+
+  <%- if @lesson.resource_file %>
+    <div class="or" data-form-section="pasteALink"><%= t(".or") %></div>
+  <% end %>
+  <div class="ordered_list_item part b">
+    <h2 data-form-section="pasteALink"><%= t("Paste_a_link") %></h2>
+    <%= render partial: 'external_resource_field', locals: {f: f} %>
+  </div>
+
+  <div class="ordered_list_item item_2">
+    <h2><%= t("Give_your_lesson_a_name_and_description_html") %></h2>
+    <%= render partial: 'title_and_description_fields', locals: {f: f} %>
+  </div>
+
+  <div class="ordered_list_item item_3">
+    <h2><%= t("Tag_your_lesson_and_go_html") %></h2>
+    <%= render partial: 'tag_fields', locals: {f: f} %>
+    <%= f.button(t("save_lesson"), {class: "add"}) %>
+  </div>
+<% end %>
+

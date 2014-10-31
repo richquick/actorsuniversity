@@ -1,0 +1,18 @@
+<%- f.object.user_links.build if f.object.user_links.none? %>
+
+<ul class="form for list of user_links">
+  <%= f.fields_for :user_links, wrapper: false do |l| %>
+    <li class="fields">
+      <%= l.select :link_type, [
+        %w(Facebook facebook),
+        %w(Linkedin linkedin),
+        %w(Twitter twitter) ] %>
+
+      <%= l.text_field :url %>
+      <%= l.link_to_remove "Remove" %>
+    </li>
+  <% end %>
+
+  <%= f.link_to_add "Add a link", :user_links %>
+</ul>
+

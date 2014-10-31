@@ -1,0 +1,21 @@
+<h1>Listing followings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Follower</th>
+      <th>Pursued</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @followings.each do |following| %>
+      <tr>
+        <td><%= following.follower.name %></td>
+        <td><%= following.pursued.name %></td>
+        <td><%= link_to 'Destroy', following, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

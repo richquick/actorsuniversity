@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<%= render 'shared/head' %>
+
+<body data-controller='<%= params[:controller]%>' data-action='<%= current_action%>' <%= body_class %>>
+
+<%= include_gon %>
+
+<div class='background image hack'>
+  <%= image_tag asset_url("#{client_name}/login.jpg") unless current_user%>
+</div>
+
+<% if current_user %>
+  <div class="main nav">
+    <%= render 'shared/client_bar' %>
+    <%= render partial: '/searches/search' %>
+    <%= render 'navigation/admin_navigation' if admin? %>
+    <%= render 'navigation/user_navigation' if non_admin_user? %>
+    <%= render 'navigation/settings' %>
+  </div>
+<% end %>
+
+<%= render 'shared/flash' %>
+
+<div class="stripe">
+  <div class="wrapper">
+    <%= yield %>
+  </div>
+</div>
+
+<%= render 'shared/admin_footer' if admin? %>
+<%= render 'shared/user_footer' if non_admin_user? %>
+
+</body>
+</html>

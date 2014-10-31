@@ -1,0 +1,6 @@
+<ul class="list of comma separated tags links">
+  <% tags.each do |tag_object|  %>
+    <%= render partial: 'tags/tag', locals: {tag_object: tag_object} %>
+  <% end %>
+</ul>
+

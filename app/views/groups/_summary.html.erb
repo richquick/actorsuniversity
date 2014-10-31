@@ -1,0 +1,8 @@
+<%- group = summary %>
+<li class="item for group">
+  <div class="group title"><%= link_to group.name, group_path(group.id) %></div>
+  <div class="expandable content">
+    <%= link_to "✘", "/admin/unassign/course/#{@course.id}/from/group/#{group.id}",
+    method: :delete, data: { confirm: 'Are you sure?' }, :class => "delete" %>
+  </div>
+</li>

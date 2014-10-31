@@ -1,0 +1,35 @@
+<script type="text/javascript" src="http://www.highcharts.com/highslide/highslide-full.min.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/modules/funnel.js"></script>
+<script type="text/javascript" src="http://www.highcharts.com/highslide/highslide.config.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="http://www.highcharts.com/highslide/highslide.css" />
+
+<span class="system_check"><%= t(".welcome") %></span>
+
+<div class="admin dashboard">
+  <div class="inner">
+    <div class="stats column">
+      <%= render 'users_and_courses' %>
+    </div>
+    <div class="completion column">
+      <%= render 'completion_funnel_graph' %>
+    </div>
+    <div class="heroes column">
+      <%= render 'heroes_and_villains' %>
+    </div>
+    <div class="three columns wrap">
+      <div class="column one">
+        <%= render 'lesson_ratings' %>
+      </div>
+      <div class="column two">
+        <%= render 'lesson_completions' %>
+        </div>
+      </div>
+      <div class="column last">
+        <div class="content container full">
+          <%= render 'user_activity_chart' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,9 @@
+<h1><%= exam_sitting.title %></h1>
+<%= exam_sitting.description %>
+<p>
+<%= t(".questions", number: exam_sitting.number_of_questions) %>
+</p>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', exam_sittings_path %>

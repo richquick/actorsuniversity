@@ -1,0 +1,15 @@
+// Icon Mixins
+
+@mixin icon($padding_left,$size) {
+  @include icon_sub($padding_left,$size);
+  &.strong {
+    @include icon_sub($ch_strong_icon_size,$ch_strong_icon_padding_left);
+  }
+}
+
+@mixin icon_sub($padding_left,$size) {
+  padding-left: $padding_left;
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-size: $size;
+}
