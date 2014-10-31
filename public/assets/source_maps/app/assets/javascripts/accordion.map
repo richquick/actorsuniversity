@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/accordion.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,EAAM,IAAC,CAAA;2BACL;;AAAA,wBAAA,KAAA,GAAO,SAAA,GAAA;aACL,CAAA,CAAE,sBAAF,CAAyB,CAAC,KAA1B,CAAgC,SAAC,CAAD,GAAA;AAC9B,QAAA,CAAC,CAAC,cAAF,CAAA,CAAA,CAAA;eACA,CAAA,CAAE,IAAF,CAAO,CAAC,OAAR,CAAgB,OAAhB,CAAwB,CAAC,WAAzB,CAAqC,IAArC,EAF8B;MAAA,CAAhC,EADK;IAAA,CAAP,CAAA;;qBAAA;;MADF,CAAA;AAAA"
+}

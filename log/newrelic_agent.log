@@ -1,0 +1,164 @@
+# Logfile created on 2014-10-31 11:43:18 +0000 by logger.rb/41954
+[10/31/14 11:43:18 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Starting the New Relic agent in "development" environment.
+[10/31/14 11:43:18 +0000 Richards-MacBook-Air-2.local (17041)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/31/14 11:43:18 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Reading configuration from config/newrelic.yml (/Users/richard/code/actorsuniversity)
+[10/31/14 11:43:18 +0000 Richards-MacBook-Air-2.local (17041)] INFO : New Relic Agent Developer Mode enabled.
+[10/31/14 11:43:18 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Environment: development
+[10/31/14 11:43:18 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Dispatcher: webrick
+[10/31/14 11:43:18 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Application: My Application
+[10/31/14 11:43:18 +0000 Richards-MacBook-Air-2.local (17041)] WARN : Agent configured not to send data in this environment.
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing ActiveRecord 4 instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing middleware-based Excon instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing Net instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing deferred Rack instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing Rack::Builder middleware instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing Rails 3+ middleware instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing Rails 4 Controller instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing Rails 4 view instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Installing Rails 4 Error instrumentation
+[10/31/14 11:43:19 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Finished instrumentation
+[10/31/14 11:43:20 +0000 Richards-MacBook-Air-2.local (17041)] INFO : Doing deferred dependency-detection before Rack startup
+[10/31/14 11:44:43 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Starting the New Relic agent in "development" environment.
+[10/31/14 11:44:43 +0000 Richards-MacBook-Air-2.local (17075)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/31/14 11:44:43 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Reading configuration from config/newrelic.yml (/Users/richard/code/actorsuniversity)
+[10/31/14 11:44:43 +0000 Richards-MacBook-Air-2.local (17075)] INFO : New Relic Agent Developer Mode enabled.
+[10/31/14 11:44:43 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Environment: development
+[10/31/14 11:44:43 +0000 Richards-MacBook-Air-2.local (17075)] INFO : No known dispatcher detected.
+[10/31/14 11:44:43 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Application: My Application
+[10/31/14 11:44:43 +0000 Richards-MacBook-Air-2.local (17075)] WARN : Agent configured not to send data in this environment.
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing ActiveRecord 4 instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing middleware-based Excon instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing Net instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing deferred Rack instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing Rack::Builder middleware instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing Rails 3+ middleware instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing Rails 4 Controller instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing Rails 4 view instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Installing Rails 4 Error instrumentation
+[10/31/14 11:44:44 +0000 Richards-MacBook-Air-2.local (17075)] INFO : Finished instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Starting the New Relic agent in "development" environment.
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Reading configuration from config/newrelic.yml (/Users/richard/code/actorsuniversity)
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : New Relic Agent Developer Mode enabled.
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Environment: development
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Dispatcher: webrick
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Application: My Application
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] WARN : Agent configured not to send data in this environment.
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing ActiveRecord 4 instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing middleware-based Excon instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing Net instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing deferred Rack instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing Rack::Builder middleware instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing Rails 3+ middleware instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing Rails 4 Controller instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing Rails 4 view instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Installing Rails 4 Error instrumentation
+[10/31/14 11:45:19 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Finished instrumentation
+[10/31/14 11:45:20 +0000 Richards-MacBook-Air-2.local (17103)] INFO : Doing deferred dependency-detection before Rack startup
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Starting the New Relic agent in "development" environment.
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Reading configuration from config/newrelic.yml (/Users/richard/code/actorsuniversity)
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : New Relic Agent Developer Mode enabled.
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Environment: development
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Dispatcher: webrick
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Application: My Application
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] WARN : Agent configured not to send data in this environment.
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing ActiveRecord 4 instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing middleware-based Excon instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing Net instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing deferred Rack instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing Rack::Builder middleware instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing Rails 3+ middleware instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing Rails 4 Controller instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing Rails 4 view instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Installing Rails 4 Error instrumentation
+[10/31/14 11:48:19 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Finished instrumentation
+[10/31/14 11:48:20 +0000 Richards-MacBook-Air-2.local (17153)] INFO : Doing deferred dependency-detection before Rack startup
+[10/31/14 11:54:21 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:54:22 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:54:26 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:54:53 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:54:54 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:54:59 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:55:00 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:55:02 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:55:05 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:56:45 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 11:57:25 +0000 Richards-MacBook-Air-2.local (17153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Starting the New Relic agent in "development" environment.
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Reading configuration from config/newrelic.yml (/Users/richard/code/actorsuniversity)
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : New Relic Agent Developer Mode enabled.
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Environment: development
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Dispatcher: webrick
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Application: My Application
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] WARN : Agent configured not to send data in this environment.
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing ActiveRecord 4 instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing middleware-based Excon instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing Net instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing deferred Rack instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing Rack::Builder middleware instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing Rails 3+ middleware instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing Rails 4 Controller instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing Rails 4 view instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Installing Rails 4 Error instrumentation
+[10/31/14 12:01:17 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Finished instrumentation
+[10/31/14 12:01:18 +0000 Richards-MacBook-Air-2.local (17312)] INFO : Doing deferred dependency-detection before Rack startup
+[10/31/14 12:04:11 +0000 Richards-MacBook-Air-2.local (17312)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: wrong number of arguments (2 for 1)
+[10/31/14 12:08:07 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Starting the New Relic agent in "development" environment.
+[10/31/14 12:08:07 +0000 Richards-MacBook-Air-2.local (17476)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/31/14 12:08:07 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Reading configuration from config/newrelic.yml (/Users/richard/code/actorsuniversity)
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : New Relic Agent Developer Mode enabled.
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Environment: development
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Dispatcher: webrick
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Application: My Application
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] WARN : Agent configured not to send data in this environment.
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing ActiveRecord 4 instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing middleware-based Excon instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing Net instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing deferred Rack instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing Rack::Builder middleware instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing Rails 3+ middleware instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing Rails 4 Controller instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing Rails 4 view instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Installing Rails 4 Error instrumentation
+[10/31/14 12:08:08 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Finished instrumentation
+[10/31/14 12:08:09 +0000 Richards-MacBook-Air-2.local (17476)] INFO : Doing deferred dependency-detection before Rack startup
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Starting the New Relic agent in "development" environment.
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Reading configuration from config/newrelic.yml (/Users/richard/code/actorsuniversity)
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : New Relic Agent Developer Mode enabled.
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Environment: development
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Dispatcher: webrick
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Application: My Application
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] WARN : Agent configured not to send data in this environment.
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing ActiveRecord 4 instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing middleware-based Excon instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing Net instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing deferred Rack instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing Rack::Builder middleware instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing Rails 3+ middleware instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing Rails 4 Controller instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing Rails 4 view instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Installing Rails 4 Error instrumentation
+[10/31/14 12:09:24 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Finished instrumentation
+[10/31/14 12:09:25 +0000 Richards-MacBook-Air-2.local (17592)] INFO : Doing deferred dependency-detection before Rack startup
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Starting the New Relic agent in "development" environment.
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Reading configuration from config/newrelic.yml (/Users/richard/code/actorsuniversity)
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : New Relic Agent Developer Mode enabled.
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Environment: development
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Dispatcher: webrick
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Application: My Application
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] WARN : Agent configured not to send data in this environment.
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing ActiveRecord 4 instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing middleware-based Excon instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing Net instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing deferred Rack instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing Rack::Builder middleware instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing Rails 3+ middleware instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing Rails 4 Controller instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing Rails 4 view instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Installing Rails 4 Error instrumentation
+[10/31/14 12:15:48 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Finished instrumentation
+[10/31/14 12:15:49 +0000 Richards-MacBook-Air-2.local (17785)] INFO : Doing deferred dependency-detection before Rack startup

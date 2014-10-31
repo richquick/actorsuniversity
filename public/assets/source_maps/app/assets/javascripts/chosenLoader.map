@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/chosenLoader.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,EAAM,IAAC,CAAA;8BACL;;AAAA,2BAAA,KAAA,GAAO,SAAA,GAAA;aACL,CAAA,CAAE,gBAAF,CAAmB,CAAC,MAApB,CACE;AAAA,QAAA,eAAA,EAAiB,oBAAjB;AAAA,QACA,KAAA,EAAO,OADP;OADF,EADK;IAAA,CAAP,CAAA;;wBAAA;;MADF,CAAA;AAAA"
+}

@@ -28,16 +28,16 @@ module Auth
     REGEXES = {
       svelte: /svelte/,
       health: /health/,
-      poor_school: /poor_school/,
-      client: /local|actorsuniversity/
+      client: /local|actors_university/
     }
 
     def self.name_from request
-      return :client if Rails.env.test?
+      return :client
+      # return :client if Rails.env.test?
 
-      REGEXES.detect do |app, regex|
-        !!(request.host =~ regex)
-      end.first
+      # REGEXES.detect do |app, regex|
+      #   !!(request.host =~ regex)
+      # end.first
     end
   end
 end
