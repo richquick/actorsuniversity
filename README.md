@@ -96,9 +96,10 @@ The SECRET_KEY_BASE is just so we can have separate env variables for each deplo
 production credentials are not in version control
 
 ```
-SECRET_KEY_BASE=doesnt_matter RAILS_ENV=production rake assets:precompile
+SECRET_KEY_BASE=doesnt_matter RAILS_ENV=production 
+rake assets:precompile
 git add .
-git commit "ran rake assets:precompile"
+git commit -m "ran rake assets:precompile"
 ``` 
 
 Then deploy with
