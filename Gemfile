@@ -63,6 +63,8 @@ group :test do
 end
 
 group :assets do
+  gem "sprockets", "2.11.0"
+  gem "sprockets-rails", "~> 2.0"
   gem "turbo-sprockets-rails3", "~> 0.2"
   gem "teaspoon", "~> 0.7"
   gem "guard-teaspoon", "~> 0.0"
@@ -85,13 +87,14 @@ gem "mini_magick", "~> 3.6"
 gem "pg", "~> 0.17"
 gem "devise", "~> 3.2"
 gem "sass-rails", "~> 4.0"
+gem "sass", "3.4.6"
 gem "uglifier", "~> 2.3"
 gem "coffee-rails", "~> 4.0"
 gem "jquery-rails", "~> 3.0"
 gem "jbuilder", "~> 1.5"
 gem "virtus", "~> 0.5"
 gem "jquery-fileupload-rails", "~> 0.4"
-gem "compass-rails", "~> 2.0.alpha.0", {:github=>"Compass/compass-rails"}
+gem "compass-rails", "~> 2.0.1", {:github=>"Compass/compass-rails"}
 gem "chosen-rails", "~> 1.0"
 gem "cancan", "~> 1.6"
 gem "letsrate", "~> 1.0", {:github=>"markburns/letsrate"}

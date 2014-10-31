@@ -11,6 +11,13 @@ ActorsUniversity::Application.configure do
     :domain         => 'demo.actorsuniversity.com',
     :enable_starttls_auto => true
   }
+
+  # ENV['AWS_BUCKET']         = 'files.actorsuniversity.com/uploads'
+  # ENV['AWS_ACCESS_KEY_ID']    = 'AKIAIZ22Y6VK7GBBWHRA'
+  # ENV['AWS_SECRET_ACCESS_KEY']  = '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'
+  # ENV['AWS_REGION']       = 'eu-west-1'
+  # ENV['SECRET_KEY_BASE']  = '85a846a33889aa85f95e88ee3214ac2ba284fc6a5c390de3e904dc30424e2a4168c3e7d5d6287bbf23dd54fc88c2efa2bbcd89bb29cea96a75278ff6be32d7b8'
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
