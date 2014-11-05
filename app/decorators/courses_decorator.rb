@@ -1,2 +1,0 @@
-class CoursesDecorator < PaginatingDecorator
-end

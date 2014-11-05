@@ -1,4 +1,0 @@
-<%= form_for :lesson_completion, as: :lesson_completion, url: lesson_lesson_completions_path(lesson.id) do |f|%>
-  <%= f.hidden_field :lesson_id,  value: lesson.id %>
-  <%= f.button t(".mark_as_completed") %>
-<% end %>

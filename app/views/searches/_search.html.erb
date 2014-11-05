@@ -1,7 +1,0 @@
-<div class="search group">
-  <%= form_for :search, url: searches_path, method: :get do |f| %>
-    <%= f.label :search, :class => "inconspicuous" %>
-    <%= f.text_field :search, :placeholder => t("Search"), class: "typeahead" %>
-    <%= f.button "Search", :class => "search" %>
-  <%- end %>
-</div>

@@ -1,8 +1,0 @@
-<div class='exams' id='filterable_list'>
-  <%= text_field_tag :filter, '', :placeholder => t("Filter"), class: "search" %>
-
-  <ul class="jigsaw_grid list for exams">
-    <%= render partial: 'exams/exam', collection: @exams %>
-  </ul>
-</div>
-

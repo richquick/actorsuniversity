@@ -1,9 +1,0 @@
-// Panels
-
-.panel {
-  background: $sk_panel_color;
-  @include rounded_corners($sk_panel_radius);
-  &:not(.clear) {
-    border: $sk_panel_border;
-  }
-}
