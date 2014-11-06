@@ -1,0 +1,209 @@
+
+body {
+  background: url("images/bg.jpg") #fefefe no-repeat center top;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", "Helvetica Neue", "Arial", "Verdana",sans-serif;
+  color: #363F4B;
+  font-size: 95%;
+}
+
+h1 {
+  font-family: "ff-tisa-sans-web-pro","Helvetica", "Helvetica Neue", "Arial", "Verdana",sans-serif;
+  font-size: 180%;
+  margin: 0 0 -5px 0;
+  text-shadow: 0 1px 0 #fff;
+  color: #E70277;
+}
+
+h2 {
+  font-family: "ff-tisa-sans-web-pro","Helvetica", "Helvetica Neue", "Arial", "Verdana",sans-serif;
+  font-size: 140%;
+  margin: 0 0 -5px 0;
+  text-shadow: 0 1px 0 #fff;
+}
+
+header {
+  padding: 0 10px 5px 10px;
+}
+
+header h1 {
+  background: url("images/logo.png") no-repeat center top;
+  height: 76px;
+  text-indent: -9000px;
+  overflow: hidden;
+  max-width: 445px;
+  background-size:100% auto;
+}
+
+header p {
+  margin-bottom: -5px;
+}
+
+section#intro {
+  background: #ffffff; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZGRkZGRkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #dddddd 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#dddddd 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#dddddd 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #ffffff 0%,#dddddd 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+section#intro article {
+  padding: 0 10px;
+}
+
+form {
+  margin: 25px 0 0 0;
+  padding: 20px 30px 10px 30px;
+  background: rgba(53,63,75,0.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 #363F4B;
+}
+
+form p {
+  margin-top: 0;
+}
+
+label {
+  text-indent: -9000px;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -1px;
+}
+
+input {
+  font-family: "Helvetica", "Helvetica Neue", "Arial", "Verdana";
+  color: #363F4B;
+  padding: 15px;
+  font-size: 110%;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-appearance: textfield;
+}
+
+button,
+.button {
+  font-family: "Helvetica", "Helvetica Neue", "Arial", "Verdana";
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+  padding: 15px;
+  font-size: 110%;
+  width: 100%;
+  max-width: 532px;
+  background: #E70277;
+  background: #E70277; /* Old browsers */
+  background: -moz-linear-gradient(top, #FF0587 0%, #E70277 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF0587), color-stop(100%,#E70277)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #FF0587 0%,#E70277 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #FF0587 0%,#E70277 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #FF0587 0%,#E70277 100%); /* IE10+ */
+  background: linear-gradient(top, #FF0587 0%,#E70277 100%); /* W3C */
+  border: 1px solid #E7047A;
+  border-top: 1px solid #FF69B7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #BA0565; /* Old browsers */
+  background: -moz-linear-gradient(top, #CC0771 0%, #BA0565 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#CC0771), color-stop(100%,#BA0565)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #CC0771 0%,#BA0565 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #CC0771 0%,#BA0565 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #CC0771 0%,#BA0565 100%); /* IE10+ */
+  background: linear-gradient(top, #CC0771 0%,#BA0565 100%); /* W3C */
+  border: 1px solid #B90766;
+  border-top: 1px solid #CC2780;
+}
+
+.social {
+  list-style: none;
+  font-size: 70%;
+  padding: 0;
+  margin: 0
+}
+
+.social li {
+  display: inline-block;
+  color: #aaa;
+  padding: 10px 5px 10px 5px;
+  margin: 0;
+}
+
+.social a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  header {
+    background: url("images/logo@2x.png") no-repeat center top;
+    background-size:300px auto;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  body {
+    background: url("images/bg@2x.jpg") #fefefe no-repeat center top;
+  }
+  
+  header {
+    padding: 0 10px 5px 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    height: 76px;
+  }
+
+  section#intro {
+    min-height: 499px;
+  }
+
+  section#intro article {
+    min-height: 499px;
+    margin: 0 auto;
+    max-width: 470px;
+    padding-right: 500px;
+    position: relative;
+  }
+
+  section#intro article:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: url("images/actor.png") no-repeat center top;
+    width: 416px;
+    height: 536px;
+    right: 20px;
+  }
+
+  .social li {
+    color: #666;
+  }
+
+  .social a {
+    color: #666;
+  }
+}
+    
