@@ -159,7 +159,6 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
   header h1 {
     background: url("images/logo@2x.png") no-repeat center top;
-    background-size:445px auto;
   }
 }
 
