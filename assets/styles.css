@@ -157,9 +157,9 @@ button:hover {
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
-  header {
+  header h1 {
     background: url("images/logo@2x.png") no-repeat center top;
-    background-size:300px auto;
+    background-size:445px auto;
   }
 }
 
@@ -167,7 +167,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   body {
     background: url("images/bg@2x.jpg") #fefefe no-repeat center top;
   }
-  
+
   header {
     padding: 0 10px 5px 10px;
     max-width: 960px;
